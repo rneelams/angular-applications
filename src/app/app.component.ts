@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SlimLoadingBarModule } from "ng2-slim-loading-bar";
+import { SlimLoadingBarService } from "ng2-slim-loading-bar";
 import {
   NavigationCancel,
   Event,
@@ -17,7 +17,7 @@ import {
 export class AppComponent {
   title = "angular-application";
   constructor(
-    private loadingbar: SlimLoadingBarModule,
+    private loadingbar: SlimLoadingBarService,
     private router: Router
   ) {
     this.router.events.subscribe((event: Event) => {
